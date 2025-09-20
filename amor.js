@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Rehabilitar botón si el audio termina
+    // Rehabilitar botón si el audio termina 2
     audio.addEventListener('ended', () => {
         playButton.textContent = 'Reproducir Música';
         playButton.disabled = false;
