@@ -1,0 +1,80 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #ff6b6b, #ff8c94, #ffb6c1);
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 5vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+    width: 90vw;
+    max-width: 400px;
+    position: relative;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #c71585;
+    font-size: clamp(1.8rem, 6vw, 2.2rem);
+    margin-bottom: 4vw;
+}
+
+input {
+    padding: 2.5vw;
+    margin: 2vw auto;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 250px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 2.5vw 7vw;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 2vw;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 6vw;
+        width: 95vw;
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 5.5vw, 2rem);
+    }
+
+    input, button {
+        font-size: clamp(0.9rem, 4.5vw, 1.1rem);
+        padding: 3vw;
+    }
+
+    button {
+        padding: 3vw 8vw;
+    }
+}
