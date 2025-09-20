@@ -63,7 +63,7 @@ body {
 
 .candle {
     position: absolute;
-    top: -95px;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
     width: clamp(20px, 5vw, 25px);
@@ -137,7 +137,8 @@ body {
 
 #message {
     width: 45%;
-    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-family: 'Great Vibes', cursive;
     color: #c2185b;
     text-align: left;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
@@ -179,9 +180,9 @@ p {
         height: clamp(120px, 50vw, 150px);
     }
 
-    #message {
+     #message {
         width: 100%;
-        font-size: clamp(0.8rem, 4vw, 0.9rem);
+        font-size: clamp(0.9rem, 4.5vw, 1rem);
         padding: 5vw;
     }
 
@@ -193,4 +194,16 @@ p {
         font-size: clamp(0.9rem, 4.5vw, 1rem);
         padding: clamp(8px, 3vw, 10px) clamp(16px, 5vw, 20px);
     }
+    .candle {
+    position: absolute;
+    top: -95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(20px, 5vw, 25px);
+    height: clamp(70px, 18vw, 90px);
+    background: linear-gradient(to top, #ffffff, #f0e68c, #d3a62f);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
 }
