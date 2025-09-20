@@ -7,3 +7,20 @@ function checkPassword() {
         alert('Clave incorrecta, mi amor. Intenta de nuevo.');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const petalsContainer = document.querySelector('.petals');
+    if (!petalsContainer) {
+        console.error('Petals container not found.');
+        return;
+    }
+
+    // Create 20 hearts for falling effect
+    for (let i = 0; i < 20; i++) {
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        petal.style.left = `${Math.random() * 100}%`;
+        petal.style.animationDelay = `${Math.random() * 5}s`;
+        petalsContainer.appendChild(petal);
+    }
+});
